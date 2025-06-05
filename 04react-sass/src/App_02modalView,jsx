@@ -1,0 +1,61 @@
+import React, { useState } from "react";
+import "./assets/vdata.scss";
+import ModalComp from "./components/ModalComp";
+
+function App() {
+  const vData = [
+    {
+      title: "1.Lorem, ipsum dolor sit amet ",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia? Dolorem quaerat ipsa praesentium suscipit aliquam cumque a illum? Molestias.",
+    },
+    {
+      title: "2.Lorem, ipsum dolor sit amet ",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia? Dolorem quaerat ipsa praesentium suscipit aliquam cumque a illum? Molestias.",
+    },
+    {
+      title: "3.Lorem, ipsum dolor sit amet ",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia? Dolorem quaerat ipsa praesentium suscipit aliquam cumque a illum? Molestias.",
+    },
+  ];
+  const [num, setNum] = useState(0);
+  const [view, setView] = useState(false);
+
+  function vModal(index) {
+    setView(true);
+    setNum(index);
+  }
+
+  function vModalClose() {
+    setView(false);
+  }
+
+  return (
+    <>
+      <h2>testView{num}</h2>
+      <ul className="lists">
+        {vData.map((item, i) => {
+          return (
+            <>
+              <li
+                onClick={() => {
+                  vModal(i);
+                }}
+              >
+                {item.title}
+              </li>
+            </>
+          );
+        })}
+      </ul>
+
+      {view ? (
+        <ModalComp closeEvent={vModalClose} sendVData={vData} sendNum={num} />
+      ) : null}
+    </>
+  );
+}
+
+export default App_02modalView;

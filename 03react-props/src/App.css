@@ -1,0 +1,11 @@
+.tab {
+  display: flex;
+}
+.tab li {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-right: 0 none;
+}
+.tab li:last-child {
+  border-right: 1px solid #000;
+}

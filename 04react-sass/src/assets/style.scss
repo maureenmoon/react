@@ -1,0 +1,46 @@
+$main-color: #30db63;
+$font-basic-size: 20px;
+$basic-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+$radius: 10px;
+$basic-padding: 10px;
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.test {
+  background-color: $main-color;
+  font-size: $font-basic-size;
+  padding: $basic-padding;
+}
+.hd {
+  _background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: $basic-shadow;
+  padding: 0 16px;
+  .menu {
+    display: flex;
+    _background-color: yellow;
+    li {
+      _background: green;
+    }
+    a {
+      height: 100%;
+      -background-color: blue;
+      display: block;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      &.on {
+        background-color: skyblue;
+        color: white;
+      }
+      &:hover {
+        background-color: pink;
+        color: aquamarine;
+      }
+    }
+  }
+}

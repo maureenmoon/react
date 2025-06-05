@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modalContent {
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    .titleWrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+    p {
+      padding: 10px 0;
+    }
+    button {
+      align-self: end;
+    }
+  }
+}

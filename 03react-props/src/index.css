@@ -1,0 +1,19 @@
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a:link,
+a:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}

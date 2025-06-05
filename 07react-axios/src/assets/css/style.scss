@@ -1,0 +1,30 @@
+$font-primary-color: #333;
+$bg-primary-color: rgb(96, 155, 249);
+
+html,
+body {
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  color: $font-primary-color;
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+  &.primary {
+    background-color: $bg-primary-color;
+  }
+}
