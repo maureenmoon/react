@@ -36,11 +36,11 @@ function Home() {
           to="/search"
           className="px-4 py-2 bg-blue-400 text-white rounded hover:bg-blue-600"
         >
-          See Best Contenss (50km)
+          See Best Contents (50km)
         </Link>
       </div>
 
-      <MapView places={contents} />
+      {/* <MapView places={contents} /> */}
       <ContentList contents={contents} />
     </div>
   );

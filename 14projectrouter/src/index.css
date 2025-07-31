@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-purple: #3f3cbb;
+}
+
+/* body {
+  max-width: 900px;
+  margin: 0 auto;
+} */

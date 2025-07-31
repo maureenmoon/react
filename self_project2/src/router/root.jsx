@@ -6,6 +6,7 @@ import CourseIndex from "../pages/course/CourseIndex";
 import Login from "../pages/login/Login";
 import courseRouter from "./courseRouter";
 import loginRouter from "./loginrouter";
+import ContentDetail from "../components/ContentDetail";
 
 const root = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const root = createBrowserRouter([
     path: "/login",
     element: <Login />,
     children: loginRouter(),
+  },
+  {
+    // path: "/content/:contentid",
+    path: "/content/:contentId",
+    element: <ContentDetail />,
   },
 ]);
 

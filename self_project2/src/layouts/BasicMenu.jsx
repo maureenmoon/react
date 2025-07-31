@@ -5,11 +5,11 @@ function BasicMenu() {
   return (
     <nav className="flex justify-between container mx-auto p-4">
       <h1>
-        <Link to="/">Triplog</Link>
+        <Link to="/">TripMaureen</Link>
       </h1>
       <ul className="flex gap-3">
         <li>
-          <Link to={"/"}>Search</Link>
+          <Link to={"/search"}>Search</Link>
         </li>
         <li>
           <Link
@@ -35,8 +35,8 @@ function BasicMenu() {
         </li>
         <div className="absolute hidden group-hover:block bg-blue-300 p-2 rounded w-[100px]">
           <span className="flex gap-3">
-            <Link to={"/course/list"}>리스트</Link>
-            <Link to={"/course/view"}>뷰</Link>
+            <Link to={"/course/list"}>courseLists</Link>
+            <Link to={"/course/view"}>courseViews</Link>
           </span>
         </div>
       </ul>

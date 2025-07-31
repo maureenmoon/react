@@ -8,8 +8,8 @@ function CourseIndex() {
     <CourseLayout>
       <div className="flex justify-center">
         <span className="flex gap-3">
-          <Link to="list">리스트</Link>
-          <Link to="view">뷰</Link>
+          <Link to="list">CourseList</Link>
+          <Link to="view">CourseView</Link>
         </span>
       </div>
       <div>

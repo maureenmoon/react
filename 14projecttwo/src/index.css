@@ -1,0 +1,34 @@
+/* font, color 등을 설정 */
+
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  /* --color-*: initial; */
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+
+  /* --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem; */
+
+  --breakpoint-xs: 475px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1500px;
+  /* --breakpoint-3xl: 1500px; */
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
